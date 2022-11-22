@@ -1,0 +1,6 @@
+Þifremi unuttum güvenlik sorusu
+kayýt oldaki captcha
+devexpress dizayn
+form dizayný
+güncelle ekraný dizayn edilecek
+güncelledeki load satýrýndaki hata düzeltilecek

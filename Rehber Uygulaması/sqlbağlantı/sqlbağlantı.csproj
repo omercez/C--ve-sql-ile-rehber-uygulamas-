@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6727848F-900D-4669-AE55-D70836EE4747}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sqlbağlantı</RootNamespace>
+    <AssemblyName>sqlbağlantı</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ara.Designer.cs">
+      <DependentUpon>Ara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilgi.Designer.cs">
+      <DependentUpon>bilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle.Designer.cs">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıt.Designer.cs">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü.Designer.cs">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="güncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="güncelle.Designer.cs">
+      <DependentUpon>güncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kisilercs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kisilercs.Designer.cs">
+      <DependentUpon>kisilercs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sil.Designer.cs">
+      <DependentUpon>sil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolbarForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolbarForm1.Designer.cs">
+      <DependentUpon>ToolbarForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ara.resx">
+      <DependentUpon>Ara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bilgi.resx">
+      <DependentUpon>bilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle.resx">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayıt.resx">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü.resx">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="güncelle.resx">
+      <DependentUpon>güncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kisilercs.resx">
+      <DependentUpon>kisilercs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sil.resx">
+      <DependentUpon>sil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolbarForm1.resx">
+      <DependentUpon>ToolbarForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\Ekran Alıntısı.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\8.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\refresh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
